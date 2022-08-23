@@ -1,13 +1,40 @@
+:root{
+  --color__white:#F5F6F7;
+  --color__accent1:#222E50;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Inter', sans-serif;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+header{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color__accent1);
+  color:var(--color__white);
+  padding:.9375rem 6.25rem;
+}
+
+header>ul{margin:0; padding:0;display:flex;gap:100px}
+header>ul>li{margin:0; list-style: none;padding:5px 15px;
+  background: 
+     linear-gradient(var(--color__white) 0 0) 
+    0% calc(-5px - 100%) /var(--d, 0%) 200% no-repeat;
+  transition: 0.3s, background-size 0.3s 0.3s;}
+header>ul>li>a{font-size:20px;font-weight:500;text-decoration:none;color:var(--color__white);}
+header>ul>li:hover{
+  --d: 100%;
+  background-position: 50% 0%;
+  transition: 0.3s, background-position 0.3s 0.3s, color 0.3s 0.3s;}
+  header>ul>li:hover >a{transition:color 0.7s; color: var(--color__accent1);}
+.Header-logo{
+  font-weight: 600;
+  font-size:22px;
+  margin:0;
 }
