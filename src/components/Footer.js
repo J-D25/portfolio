@@ -1,4 +1,4 @@
-function Footer(){
+export default function Footer(){
 const items = [{name:"Mentions légales", link:"#"}, {name:"Plan du site", link:"#"}];
 
 return (<>
@@ -9,5 +9,3 @@ return (<>
 </>
 )
 }
-
-export default Footer;
