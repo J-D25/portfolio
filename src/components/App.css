@@ -1,0 +1,10 @@
+.App-subtitle{
+    font-weight: 500;
+    font-size: 1.125rem;
+}
+
+.App-content{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
