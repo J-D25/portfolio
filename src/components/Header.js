@@ -1,3 +1,4 @@
+import './Header.css';
 export default function Header(){
 const items = [{name:"Projets", link:"#"}, {name:"À propos", link:"#"}, {name:"Contact", link:"#"}];
 return (<>
