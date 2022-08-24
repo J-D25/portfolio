@@ -1,0 +1,35 @@
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color__accent1);
+    color: var(--color__white);
+    padding: .9375rem var(--padding__LR);
+}
+
+.Header-logo {
+    color: inherit;
+    font-weight: 600;
+    font-size: 22px;
+    margin: 0;
+}
+
+header>ul {
+    gap: 100px;
+}
+
+header>ul>li {
+    background: linear-gradient(var(--color__white) 0 0) 0% calc(-5px - 100%) /var(--d, 0%) 200% no-repeat;
+}
+
+header>ul>li>a {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 5px 15px;
+}
+
+header>ul>li:hover>a {
+    color: var(--color__accent1);
+}
