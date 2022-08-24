@@ -1,3 +1,4 @@
+import './Footer.css';
 export default function Footer(){
 const items = [{name:"Mentions légales", link:"#"}, {name:"Plan du site", link:"#"}];
 
