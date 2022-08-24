@@ -1,4 +1,4 @@
-function Header(){
+export default function Header(){
 const items = [{name:"Projets", link:"#"}, {name:"À propos", link:"#"}, {name:"Contact", link:"#"}];
 return (<>
     <p className="Header-logo">Jessy-Daniel</p>
@@ -7,5 +7,3 @@ return (<>
     }</ul>
 </>);
 }
-
-export default Header;
