@@ -1,25 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+import illustration from "../assets/home.svg";
+export default function App() {
+  return (<>
+    <img className="App-illustration" alt="Joli" height="55%" src={illustration}></img>
+    <div className="App-content">
+      <h1>Jessy-Daniel</h1>
+      <p className="App-subtitle">Développeur web et web mobile</p>
+      <p>Bonjour ! N'hésitez pas à découvrir mes projets, en apprendre plus sur moi ou me contacter.</p>
     </div>
-  );
+    </>);
 }
-
-export default App;
