@@ -1,0 +1,24 @@
+/* Footer */
+
+footer {
+    background-color: #EEEEEE;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .625rem var(--padding__LR);
+    color: var(--color__accent1);
+    font-weight: 500;
+    font-size: .9375rem;
+}
+
+footer>ul {
+    gap: 50px;
+}
+
+footer>ul>li {
+    background: linear-gradient(var(--color__accent1) 0 0) 0% calc(-5px - 100%) /var(--d, 0%) 200% no-repeat;
+}
+
+footer>ul>li:hover>a {
+    color: var(--color__white);
+}
