@@ -8,11 +8,18 @@
 body {
     margin: 0;
     font-family: 'Inter', sans-serif;
+    color: var(--color__text);
+}
+
+#container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 p {
     margin: 0;
-    color: var(--color__text);
 }
 
 header>ul,
@@ -53,5 +60,12 @@ footer>ul>li:hover>a {
 /* Main */
 
 main {
-    padding: 5rem var(--padding__LR);
+    display: flex;
+    padding: 5rem 11rem;
+    gap: var(--padding__LR);
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 45px;
 }
