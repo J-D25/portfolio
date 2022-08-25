@@ -14,6 +14,9 @@
 
 .ProjectsCards-content {
     padding: 2.1875rem 3.4375rem;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
 }
 
 .ProjectsCards-content-title {
@@ -43,4 +46,5 @@
 .ProjectsCards-languages {
     display: flex;
     gap: 2.1875rem;
+    flex-wrap: wrap;
 }
