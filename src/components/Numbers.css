@@ -1,0 +1,12 @@
+.App-Numbers>p {
+    font-size: 1.125rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+.App-Numbers span {
+    font-size: 45px;
+    display: block;
+    color: #407BFF;
+    font-weight: 700;
+}
