@@ -16,6 +16,11 @@ header {
     margin: 0;
 }
 
+.Header-logo a {
+    color: inherit;
+    text-decoration: none;
+}
+
 header>ul {
     gap: 100px;
 }
