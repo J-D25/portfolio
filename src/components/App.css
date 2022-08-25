@@ -1,21 +1,21 @@
-.App-subtitle{
+.App-subtitle {
     font-weight: 500;
     font-size: 1.125rem;
 }
 
-.App-content{
-    display:flex;
+.App-content {
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
 }
 
-.App-Numbers{
-    display:flex;
+.App-Numbers {
+    display: flex;
     justify-content: space-between;
 }
 
-.Project-Cards{
+.Project-Cards {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
