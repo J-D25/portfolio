@@ -1,0 +1,15 @@
+p.ProjectsLanguages {
+    font-size: 1rem;
+    border-radius: 5px;
+    padding: .25rem 1.125rem;
+    color: var(--color__white);
+    line-height: normal;
+}
+
+.ProjectsLanguages.lang {
+    background: #5FB9FB;
+}
+
+.ProjectsLanguages.skill {
+    background: #5F6FFB;
+}
