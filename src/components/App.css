@@ -8,3 +8,8 @@
     flex-direction: column;
     justify-content: space-between;
 }
+
+.App-Numbers{
+    display:flex;
+    justify-content: space-between;
+}
