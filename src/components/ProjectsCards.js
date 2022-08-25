@@ -1,26 +1,26 @@
 import './ProjectsCards.css';
 import ProjectsLanguages from './ProjectsLanguages';
-
-export default function ProjectsCards(){
+import ExternalLink from '../assets/ExternalLink.svg';
+import GitHub from '../assets/GitHub.svg';
+export default function ProjectsCards(props){
+const {illustration, title, link, github, text, lang, skill} = props.project;
 return (<>
     <div className="ProjectsCards">
         <div className="ProjectsCards-illustration">
-            Illustration
+            {illustration}
         </div>
         <div className="ProjectsCards-content">
             <div className="ProjectsCards-content-title">
-                <h2>Basilique Saint-Ferjeux</h2>
-                <a href="#">Lien</a>
-                <a href="#">Github</a>
+                <h2>{title}</h2>
+                <a href={link[0]} alt={link[1]}><img src={ExternalLink} alt="Lien externe"/></a>
+                {github !== false ? <a href={github} alt="Repo sur GitHub"><img src={GitHub} alt="GitHub"/></a> : null}
             </div>
-            <p>Réalisation d'un site Internet sur l'histoire de la Basilique Saint-Ferjeux dans le cadre d'un projet de découverte au cours de ma formation.</p>
+            <p>{text}</p>
             <div className="ProjectsCards-languages">
-                <ProjectsLanguages type="lang" value="HTML"/>
-                <ProjectsLanguages type="lang" value="CSS"/>
-                <ProjectsLanguages type="lang" value="PHP"/>
+                {lang.map((item, index) => <ProjectsLanguages type="lang" value={item}/>)}
             </div>
             <div className="ProjectsCards-languages">
-                <ProjectsLanguages type="skill" value="Front"/>
+                {skill.map((item, index) => <ProjectsLanguages type="skill" value={item}/>)}
             </div>
         </div>
     </div>
