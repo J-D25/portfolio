@@ -7,9 +7,16 @@
     display:flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 100%;
 }
 
 .App-Numbers{
     display:flex;
     justify-content: space-between;
+}
+
+.Project-Cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
