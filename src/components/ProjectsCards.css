@@ -1,0 +1,39 @@
+.ProjectsCards {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 5px #000000;
+    border-radius: 15px;
+    color: #011A3E;
+}
+
+.ProjectsCards-illustration {
+    background-color: #F8F8F8;
+}
+
+.ProjectsCards-content {
+    padding: 1.125rem 1.625rem;
+}
+
+.ProjectsCards-content-title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.ProjectsCards-content h2 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 1.5625rem;
+    color: #03419A;
+}
+
+.ProjectsCards-content p {
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+    text-align: justify;
+}
+
+.ProjectsCards-languages {
+    display: flex;
+}
