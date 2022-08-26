@@ -1,0 +1,98 @@
+.Contact-means {
+    display: flex;
+    align-items: center;
+    gap: 6.25rem;
+    margin-top: 2rem;
+}
+
+.Contact-means form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.Contact-means-formInput {
+    display: flex;
+    flex-direction: column;
+    gap: .3125rem;
+}
+
+.Contact-means-formInput label {
+    font-weight: 500;
+    font-size: 1.0625rem;
+    color: #454545;
+}
+
+.Contact-means-formInput input, .Contact-means-formInput textarea {
+    appearance: none;
+    border: none;
+    border-bottom: 1.5px solid #8892B0;
+    padding: .625rem;
+    font-family: inherit;
+    display: flex;
+    resize: none;
+}
+
+.Contact-means-formInput input::placeholder, .Contact-means-formInput textarea::placeholder {
+    color: #AAAAAA;
+}
+
+.Contact-means-formInput input:focus-visible, .Contact-means-formInput textarea:focus-visible {
+    outline: none;
+    border-bottom-color: black;
+}
+
+.Contact-means-socials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 500;
+    gap: .9375rem;
+}
+
+.Contact-means-socials-link {
+    display: flex;
+    align-items: center;
+    gap: .9375rem;
+}
+
+.Contact-means-socials-link:hover {
+    cursor: pointer;
+}
+
+.Contact-means-socials-link:hover > .Contact-means-socials-link-circle {
+    background-color: #f5f5f5;
+    transition: 0.5s background-color;
+}
+
+.Contact-means-socials-link:hover > .Contact-means-socials-link-circle i {
+    color: var(--color__accent1);
+    transition: 0.3s color;
+}
+
+.Contact-means-socials-link:hover > a {
+    color: #AAAAAA;
+    transition: 0.3s color;
+}
+
+.Contact-means-socials-link a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.Contact-means-socials-link-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: var(--color__accent1);
+    border-radius: 1.5625rem;
+}
+
+.Contact-means-socials-link-circle i {
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
