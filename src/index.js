@@ -10,35 +10,24 @@ import Footer from './components/Footer';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 
-const header = ReactDOM.createRoot(document.getElementById('header'));
-header.render(
+const container = ReactDOM.createRoot(document.getElementById('container'));
+container.render(
   <React.StrictMode>
     <BrowserRouter>
       <Header />
+      <main id="root">
+        <Routes>
+          <Route path="/" exact element={<App />} />
+          <Route path="/project" exact element={<Project />} />
+          <Route path="/contact" exact element={<Contact />} />
+          <Route path="/about" exact element={<About />} />
+        </Routes>
+      </main>
+      <Footer />
     </BrowserRouter>
   </React.StrictMode>
 );
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-<React.StrictMode>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<App/>} />
-        <Route path="/project" element={<Project />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/about" element={<About />} />
-      </Routes>
-    </BrowserRouter>
-  </React.StrictMode>
-);
-
-const footer = ReactDOM.createRoot(document.getElementById('footer'));
-footer.render(
-  <React.StrictMode>
-    <Footer />
-  </React.StrictMode>
-);
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
