@@ -14,7 +14,7 @@ export default function App() {
     return Math.round(daysDiff);
   }
   return (<>
-    <img className="App-illustration" alt="Joli" height="55%" src={illustration}></img>
+    <img className="App-illustration" alt="Joli" height="400" src={illustration}></img>
     <div className="App-content">
       <h1>Jessy-Daniel</h1>
       <p className="App-subtitle">Développeur web et web mobile</p>
