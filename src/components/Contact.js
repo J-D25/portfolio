@@ -32,21 +32,21 @@ export default function Contact() {
             <div className="Contact-means-socials-link-circle">
               <i class="fa-brands fa-github"></i>
             </div>
-            <a href="/g">GitHub</a>
+            <a href="https://github.com/J-D25/">GitHub</a>
           </div>
           
           <div className="Contact-means-socials-link">
             <div className="Contact-means-socials-link-circle">
               <i class="fa-brands fa-linkedin-in"></i>
             </div>
-            <a href="/g">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/jessy-daniel">LinkedIn</a>
           </div>
           
           <div className="Contact-means-socials-link">
             <div className="Contact-means-socials-link-circle">
               <i class="fa-brands fa-instagram"></i>
             </div>
-            <a href="/g">Instagram</a>
+            <a href="https://www.instagram.com/jd.dev25/">Instagram</a>
           </div>
         </div>
       </div>
