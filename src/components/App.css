@@ -12,7 +12,7 @@
 
 .App-Numbers {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .Project-Cards {
