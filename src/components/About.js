@@ -1,6 +1,9 @@
 import './App.css';
 import './About.css';
 import illustration from "../assets/about.svg";
+import MySQL from "../assets/MySQL.svg";
+import VBA from "../assets/VBA.svg";
+import VSCode from "../assets/VSCode.svg";
 
 export default function About() {
   return (<>
@@ -13,12 +16,13 @@ export default function About() {
         <i class="fa-brands fa-css3-alt"></i>
         <i class="fa-brands fa-js"></i>
         <i class="fa-brands fa-php"></i>
-        sql
+        <img src={MySQL} alt="MySQL"/>
         <i class="fa-brands fa-git-alt"></i>
         <i class="fa-brands fa-react"></i>
-        vba
+        <img src={VBA} alt="Visual Basic for Applications"/>
       </div>
       <div className="About-icons">
+        <img src={VSCode} alt="Visual Studio Code"/>
         <i class="fa-brands fa-figma"></i>
         <i class="fa-brands fa-github"></i>
         <i class="fa-brands fa-ubuntu"></i>
