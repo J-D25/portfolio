@@ -57,12 +57,8 @@
     gap: .9375rem;
 }
 
-.Contact-means-socials-link:hover {
-    cursor: pointer;
-}
-
 .Contact-means-socials-link:hover > .Contact-means-socials-link-circle {
-    background-color: #f5f5f5;
+    background-color: var(--color__white);
     transition: 0.5s background-color;
 }
 
@@ -92,7 +88,7 @@
 }
 
 .Contact-means-socials-link-circle i {
-    color: white;
+    color: var(--color__white);
     font-size: 1.25rem;
     font-weight: 500;
 }
