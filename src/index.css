@@ -71,3 +71,21 @@ h1 {
     font-size: 45px;
     margin-top: 0;
 }
+
+.button {
+    display: inline-block;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: var(--color__accent2);
+    padding: .5rem 1rem;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color__white);
+    line-height: 1.625rem;
+}
+
+.button:hover {
+    background-color: #3362cc;
+}
