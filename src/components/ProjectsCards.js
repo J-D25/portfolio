@@ -12,15 +12,15 @@ return (<>
         <div className="ProjectsCards-content">
             <div className="ProjectsCards-content-title">
                 <h2>{title}</h2>
-                <a href={link[0]} alt={link[1]}><img src={ExternalLink} alt="Lien externe"/></a>
-                {github !== false ? <a href={github} alt="Repo sur GitHub"><img src={GitHub} alt="GitHub"/></a> : null}
+                <a href={link[0]} alt={link[1]}><img src={ExternalLink} width="25" height="25" alt="Lien externe"/></a>
+                {github !== false ? <a href={github} alt="Repo sur GitHub"><img src={GitHub} width="27" height="25" alt="GitHub"/></a> : null}
             </div>
             <p>{text}</p>
             <div className="ProjectsCards-languages">
-                {lang.map((item, index) => <ProjectsLanguages type="lang" value={item}/>)}
+                {lang.map((item, index) => <ProjectsLanguages key={index} type="lang" value={item}/>)}
             </div>
             <div className="ProjectsCards-languages">
-                {skill.map((item, index) => <ProjectsLanguages type="skill" value={item}/>)}
+                {skill.map((item, index) => <ProjectsLanguages key={index} type="skill" value={item}/>)}
             </div>
         </div>
     </div>
