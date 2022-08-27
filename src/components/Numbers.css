@@ -7,6 +7,6 @@
 .App-Numbers span {
     font-size: 45px;
     display: block;
-    color: #407BFF;
+    color: var(--color__accent2);
     font-weight: 700;
 }
