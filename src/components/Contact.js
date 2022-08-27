@@ -25,7 +25,7 @@ export default function Contact() {
             <label htmlFor="form-message">Message</label>
             <textarea type="text" id="form-message" placeholder="Somewhere after midnight in my wildest fantasy" required/>
           </div>
-          <input type="submit" value="Valider"/>
+          <input type="submit" className="button" value="Valider"/>
         </form>
         <div className="Contact-means-socials">
           <div className="Contact-means-socials-link">
