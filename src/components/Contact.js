@@ -30,27 +30,27 @@ export default function Contact() {
         <div className="Contact-means-socials">
           <div className="Contact-means-socials-link">
             <div className="Contact-means-socials-link-circle">
-              <i class="fa-brands fa-github"></i>
+              <i className="fa-brands fa-github"></i>
             </div>
             <a href="https://github.com/J-D25/">GitHub</a>
           </div>
           
           <div className="Contact-means-socials-link">
             <div className="Contact-means-socials-link-circle">
-              <i class="fa-brands fa-linkedin-in"></i>
+              <i className="fa-brands fa-linkedin-in"></i>
             </div>
             <a href="https://www.linkedin.com/in/jessy-daniel">LinkedIn</a>
           </div>
           
           <div className="Contact-means-socials-link">
             <div className="Contact-means-socials-link-circle">
-              <i class="fa-brands fa-instagram"></i>
+              <i className="fa-brands fa-instagram"></i>
             </div>
             <a href="https://www.instagram.com/jd.dev25/">Instagram</a>
           </div>
         </div>
       </div>
     </div>
-    <img className="App-illustration" alt="Joli" height="400" src={illustration}></img>
+    <img className="App-illustration" alt="Femme derrière un écran d'ordinateur munie d'un casque audio qui tend la main pour attraper une lettre." width="457.266" height="400" src={illustration}></img>
     </>);
 }
