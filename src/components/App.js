@@ -15,7 +15,7 @@ export default function App() {
   }
   
   return (<>
-    <img className="App-illustration" alt="Joli" height="400" src={illustration}></img>
+    <img className="App-illustration" alt="Homme assis à un bureau devant un écran d'ordinateur." width="486.656" height="400" src={illustration}></img>
     <div className="App-content">
       <div>
         <h1>Jessy-Daniel</h1>
