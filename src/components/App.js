@@ -13,11 +13,14 @@ export default function App() {
     let daysDiff = timestampsDiff / calcDiff;
     return Math.round(daysDiff);
   }
+  
   return (<>
     <img className="App-illustration" alt="Joli" height="400" src={illustration}></img>
     <div className="App-content">
-      <h1>Jessy-Daniel</h1>
-      <p className="App-subtitle">Développeur web et web mobile</p>
+      <div>
+        <h1>Jessy-Daniel</h1>
+        <p className="App-subtitle">Développeur web et web mobile</p>
+      </div>
       <p>Bonjour ! N'hésitez pas à découvrir mes projets, en apprendre plus sur moi ou me contacter.</p>
       <div className="App-Numbers">
         <Numbers value="523" title="commits"/>
