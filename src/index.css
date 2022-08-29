@@ -99,6 +99,7 @@ h1 {
 
 .button:hover {
     background-color: var(--color__accent2);
+    color: var(--color__white);
 }
 
 @keyframes rebond {
