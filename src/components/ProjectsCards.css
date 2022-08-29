@@ -29,7 +29,6 @@
     margin: 0;
     font-weight: 600;
     font-size: 1.5625rem;
-    color: #03419A;
 }
 
 .ProjectsCards-content p {
@@ -41,6 +40,10 @@
 
 .ProjectsCards-content-title a {
     display: flex;
+}
+
+.ProjectsCards-content-title a:hover img {
+    filter: brightness(2) grayscale(1);
 }
 
 .ProjectsCards-languages {
