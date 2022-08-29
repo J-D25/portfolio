@@ -71,7 +71,7 @@
 }
 
 .Contact-means-socials-link:hover>a {
-    color: #AAAAAA;
+    color: var(--color__gray);
     transition: 0.3s color;
 }
 
