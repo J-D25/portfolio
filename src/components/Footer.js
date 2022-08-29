@@ -1,4 +1,5 @@
 import './Footer.css';
+import {Link} from "react-router-dom";
 export default function Footer(){
 const items = [{name:"Mentions légales", link:"/legals"}, {name:"Plan du site", link:"/sitemap"}];
 
@@ -11,7 +12,7 @@ return (<>
         <a href="https://www.instagram.com/jd.dev25/" className="Contact-means-socials-link-circle" title="Instagram"><i className="fa-brands fa-instagram"></i></a>
     </div>
     <ul>{
-        items.map((item, index) => <li key={index}><a href={item.link}>{item.name}</a></li>)
+        items.map((item, index) => <li key={index}><Link to={item.link}>{item.name}</Link></li>)
     }</ul>
 </footer>
 </>
