@@ -1,6 +1,6 @@
 import './Footer.css';
 export default function Footer(){
-const items = [{name:"Mentions légales", link:"#"}, {name:"Plan du site", link:"#"}];
+const items = [{name:"Mentions légales", link:"/legals"}, {name:"Plan du site", link:"/sitemap"}];
 
 return (<>
 <footer id="footer">
