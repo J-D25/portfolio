@@ -4,6 +4,7 @@
     --color__accent1: #222E50;
     --color__accent2: #407BFF;
     --color__text: #011A3E;
+    --color__link: #03419A;
     --padding__LR: 6.25rem;
 }
 
@@ -22,6 +23,15 @@ body {
 
 p {
     margin: 0;
+}
+
+a {
+    color: var(--color__link);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--color__gray);
 }
 
 header>nav>ul,
