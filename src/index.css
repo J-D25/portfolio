@@ -78,7 +78,7 @@ h1 {
     border: 0;
     cursor: pointer;
     text-decoration: none;
-    background-color: var(--color__accent2);
+    background-color: #3463cc;
     padding: .5rem 1rem;
     font-size: 16px;
     font-weight: 600;
@@ -87,7 +87,7 @@ h1 {
 }
 
 .button:hover {
-    background-color: #3362cc;
+    background-color: var(--color__accent2);
 }
 
 @keyframes rebond {
