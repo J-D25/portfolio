@@ -24,7 +24,8 @@
     color: #454545;
 }
 
-.Contact-means-formInput input, .Contact-means-formInput textarea {
+.Contact-means-formInput input,
+.Contact-means-formInput textarea {
     appearance: none;
     border: none;
     border-bottom: 1.5px solid #8892B0;
@@ -34,11 +35,13 @@
     resize: none;
 }
 
-.Contact-means-formInput input::placeholder, .Contact-means-formInput textarea::placeholder {
+.Contact-means-formInput input::placeholder,
+.Contact-means-formInput textarea::placeholder {
     color: #AAAAAA;
 }
 
-.Contact-means-formInput input:focus-visible, .Contact-means-formInput textarea:focus-visible {
+.Contact-means-formInput input:focus-visible,
+.Contact-means-formInput textarea:focus-visible {
     outline: none;
     border-bottom-color: black;
 }
@@ -57,17 +60,17 @@
     gap: .9375rem;
 }
 
-.Contact-means-socials-link:hover > .Contact-means-socials-link-circle {
+.Contact-means-socials-link:hover>.Contact-means-socials-link-circle {
     background-color: var(--color__white);
     transition: 0.5s background-color;
 }
 
-.Contact-means-socials-link:hover > .Contact-means-socials-link-circle i {
+.Contact-means-socials-link:hover>.Contact-means-socials-link-circle i {
     color: var(--color__accent1);
     transition: 0.3s color;
 }
 
-.Contact-means-socials-link:hover > a {
+.Contact-means-socials-link:hover>a {
     color: #AAAAAA;
     transition: 0.3s color;
 }
@@ -85,6 +88,8 @@
     height: 2.5rem;
     background-color: var(--color__accent1);
     border-radius: 1.5625rem;
+    box-sizing: border-box;
+    border: 1px solid var(--color__accent1);
 }
 
 .Contact-means-socials-link-circle i {
