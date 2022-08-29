@@ -7,6 +7,7 @@ import Project from "./components/Project";
 import Contact from "./components/Contact";
 import About from "./components/About";
 import Footer from './components/Footer';
+import Error from './components/Error';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 
@@ -21,6 +22,7 @@ container.render(
           <Route path="/project" exact element={<Project />} />
           <Route path="/contact" exact element={<Contact />} />
           <Route path="/about" exact element={<About />} />
+          <Route path="*" element={<Error />} />
         </Routes>
       </main>
       <Footer />
