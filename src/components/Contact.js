@@ -1,29 +1,51 @@
+import {useState, useRef} from "react";
 import './App.css';
 import './Contact.css';
 import illustration from "../assets/contact.svg";
 
 export default function Contact() {
+  const [name, setName] = useState("");
+  const [firstName, setFirstName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const formContact = useRef(null)
+  function handleFormSubmit(e){
+      e.preventDefault();
+      const data = new FormData(formContact.current);
+        fetch("http://portefoliojd.fr/portfolio/src/data/mail.php", { method: "POST", body: data })
+            .then(response => response.json())
+            .then((results) => {
+                if (results.responseServer === true && results.responseMailer === true) {
+                  setName("");
+                  setFirstName("");
+                  setEmail("");
+                  setMessage("");
+                }
+            });
+        return false;
+  }
+  
   return (<>
     <div className="App-content">
       <h1>Contact</h1>
       <p className="App-subtitle">Vous souhaitez discuter ? Remplissez le formulaire ci-dessous.</p>
       <div className="Contact-means">
-        <form>
+        <form ref={formContact} onSubmit={handleFormSubmit}>
           <div className="Contact-means-formInput">
             <label htmlFor="form-name">Nom</label>
-            <input type="text" id="form-name" placeholder="Tyler" required/>
+            <input type="text" id="form-name" name="lname" value={name} onChange={e => setName(e.target.value)} placeholder="Tyler" required/>
           </div>
           <div className="Contact-means-formInput">
             <label htmlFor="form-firstname">Prénom</label>
-            <input type="text" id="form-firstname" placeholder="Bonnie" required/>
+            <input type="text" id="form-firstname" name="fname" value={firstName} onChange={e => setFirstName(e.target.value)} placeholder="Bonnie" required/>
           </div>
           <div className="Contact-means-formInput">
             <label htmlFor="form-email">Email</label>
-            <input type="email" id="form-email" placeholder="bonnie.tyler@music.com" required/>
+            <input type="email" id="form-email" name="mail" value={email} onChange={e => setEmail(e.target.value)} placeholder="bonnie.tyler@music.com" required/>
           </div>
           <div className="Contact-means-formInput">
             <label htmlFor="form-message">Message</label>
-            <textarea type="text" id="form-message" placeholder="Somewhere after midnight in my wildest fantasy" required/>
+            <textarea type="text" id="form-message" name="message" value={message} onChange={e => setMessage(e.target.value)} placeholder="Somewhere after midnight in my wildest fantasy" required/>
           </div>
           <input type="submit" className="button" value="Valider"/>
         </form>
