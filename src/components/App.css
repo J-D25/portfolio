@@ -3,6 +3,14 @@
     font-size: 1.125rem;
 }
 
+.App-illustration {
+    animation-name: rebond;
+    animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    animation-duration: 1.2s;
+    animation-delay: 0.1s;
+    animation-fill-mode: both;
+}
+
 .App-content {
     display: flex;
     flex-direction: column;
@@ -13,6 +21,11 @@
 .App-Numbers {
     display: flex;
     justify-content: space-around;
+    animation-name: cliquenaude;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-delay: 0.6s;
 }
 
 .Project-Cards {
