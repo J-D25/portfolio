@@ -23,9 +23,9 @@ export default function App() {
       </div>
       <p>Bonjour ! N'hésitez pas à découvrir mes projets, en apprendre plus sur moi ou me contacter.</p>
       <div className="App-Numbers">
+        <Numbers value={dayFromDate("19 May 2000", "years")} title="ans"/>
         <Numbers value="523" title="commits"/>
         <Numbers value={dayFromDate("12 May 2012")} title="jours de code"/>
-        <Numbers value={dayFromDate("19 May 2000", "years")} title="ans"/>
       </div>
     </div>
     </>);
