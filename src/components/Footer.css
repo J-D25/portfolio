@@ -3,7 +3,6 @@
 footer {
     background-color: #EEEEEE;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: .625rem var(--padding__LR);
     color: var(--color__accent1);
@@ -11,8 +10,37 @@ footer {
     font-size: .9375rem;
 }
 
+footer>* {
+    flex: 1 1 0;
+}
+
+.Footer-socials {
+    display: flex;
+    justify-content: center;
+    gap: .625rem;
+}
+
+.Footer-socials>.Contact-means-socials-link-circle {
+    width: 1.875rem;
+    height: 1.875rem;
+    text-decoration: none;
+}
+
+.Footer-socials>.Contact-means-socials-link-circle:hover {
+    background-color: var(--color__white);
+}
+
+.Footer-socials>.Contact-means-socials-link-circle i {
+    font-size: 1rem;
+}
+
+.Footer-socials>.Contact-means-socials-link-circle:hover i {
+    color: var(--color__accent1);
+}
+
 footer>ul {
     gap: 50px;
+    justify-content: flex-end;
 }
 
 footer>ul>li {
