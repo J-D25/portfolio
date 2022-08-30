@@ -1,6 +1,6 @@
 [
     {
-      "illustration": "X",
+      "illustration": null,
       "title": "Basilique Saint-Ferjeux",
       "link": [
         "https://jessya.promo-159.codeur.online/basilique/",
@@ -18,7 +18,7 @@
       ]
     },
     {
-      "illustration": "1",
+      "illustration": null,
       "title": "Dashboard newsletter",
       "link": [
         "https://jessya.promo-159.codeur.online/basilique/admin",
@@ -35,7 +35,7 @@
       ]
     },
     {
-      "illustration": "1",
+      "illustration": null,
       "title": "Villy-en-Auxois",
       "link": [
         "http://villyenauxois.free.fr/",
@@ -56,7 +56,7 @@
       ]
     },
     {
-      "illustration": "1",
+      "illustration": null,
       "title": "Calculatrice de pourboires",
       "link": [
         "https://jessya.promo-159.codeur.online/tips/",
@@ -74,7 +74,7 @@
       ]
     },
     {
-      "illustration": "1",
+      "illustration": null,
       "title": "Rock, paper, scissors",
       "link": [
         "https://jessya.promo-159.codeur.online/rock/",
