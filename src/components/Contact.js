@@ -45,7 +45,7 @@ export default function Contact() {
           </div>
           <div className="Contact-means-formInput">
             <label htmlFor="form-message">Message</label>
-            <textarea type="text" id="form-message" name="message" value={message} onChange={e => setMessage(e.target.value)} placeholder="Somewhere after midnight in my wildest fantasy" required/>
+            <textarea type="text" id="form-message" name="message" value={message} onChange={e => setMessage(e.target.value)} placeholder="Somewhere after midnight in my wildest fantasy" required rows="5"/>
           </div>
           <input type="submit" className="button" value="Valider"/>
         </form>
