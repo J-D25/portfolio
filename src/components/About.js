@@ -28,6 +28,6 @@ export default function About() {
         <i className="fa-brands fa-ubuntu"></i>
       </div>
     </div>
-    <img className="App-illustration" alt="Homme assis à un bureau devant un écran d'ordinateur." width="529.406" height="480" src={illustration}></img>
+    <img className="App-illustration reversed" alt="Homme assis à un bureau devant un écran d'ordinateur." width="529.406" height="480" src={illustration}></img>
     </>);
 }
