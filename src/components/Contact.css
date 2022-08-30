@@ -1,7 +1,7 @@
 .Contact-means {
     display: flex;
     align-items: center;
-    gap: 6.25rem;
+    gap: var(--padding__LR);
     margin-top: 2rem;
 }
 
