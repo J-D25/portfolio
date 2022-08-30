@@ -18,6 +18,14 @@
     width: 100%;
 }
 
+.App-hello {
+    line-height: 1.5;
+}
+
+.App-hello a {
+    font-weight: 600;
+}
+
 .App-Numbers {
     display: flex;
     justify-content: space-around;
