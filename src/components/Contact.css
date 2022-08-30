@@ -33,6 +33,7 @@
     font-family: inherit;
     display: flex;
     resize: none;
+    font-size: .9375rem;
     /*reset iPhone default style*/
     -webkit-appearance: none;
     border-radius: 0;
