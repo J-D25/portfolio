@@ -1,4 +1,5 @@
 import './App.css';
+import {Link} from "react-router-dom";
 import Numbers from './Numbers.js';
 import illustration from "../assets/home.svg";
 export default function App() {
@@ -21,7 +22,7 @@ export default function App() {
         <h1>Jessy-Daniel</h1>
         <p className="App-subtitle">Développeur web et web mobile</p>
       </div>
-      <p>Bonjour ! N'hésitez pas à découvrir mes projets, en apprendre plus sur moi ou me contacter.</p>
+      <p className="App-hello">Bonjour ! N'hésitez pas à <Link to="/project">découvrir mes projets</Link>, <Link to="/about">en apprendre plus sur moi</Link> ou <Link to="/contact">me contacter</Link>.</p>
       <div className="App-Numbers">
         <Numbers value={dayFromDate("19 May 2000", "years")} title="ans"/>
         <Numbers value="523" title="commits"/>
