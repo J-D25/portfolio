@@ -5,8 +5,14 @@
 }
 
 .App-Numbers span {
-    font-size: 45px;
+    font-size: 2.8125rem;
     display: block;
     color: var(--color__accent2);
     font-weight: 700;
+}
+
+@media all and (max-width:765px) {
+    .App-Numbers span {
+        font-size: 2.2125rem;
+    }
 }

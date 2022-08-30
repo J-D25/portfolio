@@ -33,6 +33,9 @@
     font-family: inherit;
     display: flex;
     resize: none;
+    /*reset iPhone default style*/
+    -webkit-appearance: none;
+    border-radius: 0;
 }
 
 .Contact-means-formInput input::placeholder,
@@ -96,4 +99,11 @@
     color: var(--color__white);
     font-size: 1.25rem;
     font-weight: 500;
+}
+
+@media all and (max-width:765px) {
+    .Contact-means {
+        flex-direction: column;
+        gap: 1.75rem;
+    }
 }

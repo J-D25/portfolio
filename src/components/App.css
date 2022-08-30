@@ -34,3 +34,13 @@
     flex-wrap: wrap;
     gap: 3rem;
 }
+
+@media all and (max-width:765px) {
+    .App-illustration {
+        width: 100%;
+        height: 100%;
+    }
+    .App-Numbers {
+        flex-direction: column;
+    }
+}
