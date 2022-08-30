@@ -4,12 +4,22 @@
 
 .About-icons {
     display: flex;
-    gap: 15px;
+    gap: 1rem;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 i {
     font-style: normal;
     font-size: 50px;
     color: #0C1F39
+}
+
+@media all and (max-width:765px) {
+    .About-icons {
+        justify-content: center;
+    }
+    .About-icons+.About-icons {
+        margin-top: 1rem;
+    }
 }

@@ -51,3 +51,12 @@
     gap: 2.1875rem;
     flex-wrap: wrap;
 }
+
+@media all and (max-width:765px) {
+    .ProjectsCards-content {
+        padding: 1.1875rem 1.4375rem;
+    }
+    .ProjectsCards-content p {
+        margin: 0;
+    }
+}
