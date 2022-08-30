@@ -65,3 +65,10 @@ footer>ul>li:hover>a {
         margin: 0;
     }
 }
+
+
+@media all and (min-width:765px) and (max-width:992px) {
+    footer>ul {
+        gap: unset;
+    }
+}

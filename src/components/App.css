@@ -52,3 +52,10 @@
         flex-direction: column;
     }
 }
+
+
+@media all and (min-width:765px) and (max-width:992px) {
+    .App-hello{
+        margin:1.5rem 0;
+    }
+}

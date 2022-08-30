@@ -143,11 +143,11 @@ h1 {
 }
 
 @media all and (max-width:765px) {
-     :root {
-        --padding__LR: 1.5rem;
+    :root {
+        --padding__LR: 1.75rem;
     }
     main {
-        padding: 2rem 1.75rem;
+        padding: 2rem var(--padding__LR);
         flex-direction: column;
     }
     main>.App-illustration.reversed {
@@ -165,5 +165,33 @@ h1 {
     h1 {
         font-size: 2.2125rem;
         text-align: center;
+    }
+}
+
+
+@media all and (min-width:765px) and (max-width:992px) {
+    .App-illustration.reversed{
+        width: 65%;
+        height: 65%;
+    }
+    :root {
+        --padding__LR:2.75rem;
+    }
+    main {
+        padding: 2rem var(--padding__LR);
+        flex-direction: column;
+        align-items: center;
+    }
+    main>.App-illustration.reversed {
+        order: 1;
+    }
+    main>.App-content {
+        order: 2;
+    }
+    .App-illustration{
+        max-width:85%;
+    }
+    footer>ul {
+        gap:unset;
     }
 }
