@@ -73,7 +73,7 @@ footer>ul>li:hover>a {
 
 main {
     display: flex;
-    padding: 5rem 11rem;
+    padding: 5vh 11vw;
     gap: var(--padding__LR);
 }
 
@@ -143,7 +143,7 @@ h1 {
 }
 
 @media all and (max-width:765px) {
-    :root {
+     :root {
         --padding__LR: 1.75rem;
     }
     main {
@@ -168,14 +168,13 @@ h1 {
     }
 }
 
-
 @media all and (min-width:765px) and (max-width:992px) {
-    .App-illustration.reversed{
+    .App-illustration.reversed {
         width: 65%;
         height: 65%;
     }
-    :root {
-        --padding__LR:2.75rem;
+     :root {
+        --padding__LR: 2.75rem;
     }
     main {
         padding: 2rem var(--padding__LR);
@@ -188,10 +187,28 @@ h1 {
     main>.App-content {
         order: 2;
     }
-    .App-illustration{
-        max-width:85%;
+    .App-illustration {
+        max-width: 85%;
     }
     footer>ul {
-        gap:unset;
+        gap: unset;
+    }
+}
+
+@media all and (min-width:992px) and (max-width:1250px) {
+     :root {
+        --padding__LR: 4.25rem;
+    }
+    main {
+        padding: 5vh 5vw;
+    }
+}
+
+@media all and (min-width:1250px) and (max-width:1440px) {
+     :root {
+        --padding__LR: 5.25rem;
+    }
+    main {
+        padding: 5vh 7vw;
     }
 }
