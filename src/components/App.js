@@ -2,19 +2,10 @@ import './App.css';
 import {Link} from "react-router-dom";
 import Numbers from './Numbers.js';
 import illustration from "../assets/home.svg";
+import {dayFromDate} from "../day.js";
+
 export default function App() {
-  function dayFromDate(olddate, output){
-    const oldDate = new Date(olddate);
-    const currentDate = new Date();
-    let timestampsDiff = currentDate.getTime() - oldDate.getTime();
-    let calcDiff = 1000 * 3600 * 24;
-    if (output === "years"){
-      calcDiff = 1000 * 3600 * 24 * 365;
-    }
-    let daysDiff = timestampsDiff / calcDiff;
-    return Math.round(daysDiff);
-  }
-  
+
   return (<>
     <img className="App-illustration" alt="Homme assis à un bureau devant un écran d'ordinateur." width="486.656" height="400" src={illustration}></img>
     <div className="App-content">
