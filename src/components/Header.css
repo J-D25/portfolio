@@ -50,7 +50,36 @@ header>nav>ul>li>a.active {
 
 @media all and (max-width:765px) {
     .Header-burger {
-        display: unset;
+        appearance: none;
+        border: none;
+        background: none;
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+    .Header-burger span {
+        background-color: var(--color__white);
+        width: 2rem;
+        height: .375rem;
+        display: block;
+    }
+    .Header-burger__line1 {
+        transform: translateX(-10px);
+    }
+    .Header-burger__line2 {
+        visibility: visible;
+    }
+    .Header-burger__line3 {
+        transform: translateX(10px);
+    }
+    .Header-burger.openMenu>.Header-burger__line1 {
+        transform: translate(0px, 10px) rotate(45deg);
+    }
+    .Header-burger.openMenu>.Header-burger__line2 {
+        visibility: hidden;
+    }
+    .Header-burger.openMenu>.Header-burger__line3 {
+        transform: translate(0px, -10px) rotate(-45deg);
     }
     nav {
         display: none;
