@@ -1,6 +1,7 @@
 import {useState, useRef} from "react";
 import './App.css';
 import './Contact.css';
+import Mail from "../data/mail.php"
 import illustration from "../assets/contact.svg";
 
 export default function Contact() {
@@ -12,7 +13,7 @@ export default function Contact() {
   function handleFormSubmit(e){
       e.preventDefault();
       const data = new FormData(formContact.current);
-        fetch("http://portefoliojd.fr/portfolio/src/data/mail.php", { method: "POST", body: data })
+        fetch(Mail, { method: "POST", body: data })
             .then(response => response.json())
             .then((results) => {
                 if (results.responseServer === true && results.responseMailer === true) {
