@@ -20,8 +20,12 @@ export default function Header(){
 return (<>
 <header id="header">
     <p className="Header-logo"><Link to="/" onClick={() => closeMenu()}>Jessy-Daniel</Link></p>
-    <button className="Header-burger" onClick={handleButtonClick}>Menu</button>
-    <nav className={openMenu ? " openMenu" : ""}>
+    <button className={`Header-burger${openMenu ? " openMenu" : ""}`} onClick={handleButtonClick}>
+        <span className="Header-burger__line1"></span>
+        <span className="Header-burger__line2"></span>
+        <span className="Header-burger__line3"></span>
+    </button>
+    <nav className={openMenu ? "openMenu" : ""}>
         <ul>{
             items.map((item, index) => <li key={index}><NavLink to={item.link}
             onClick={() => closeMenu()}>{item.name}</NavLink></li>)
