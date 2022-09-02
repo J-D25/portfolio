@@ -3,7 +3,7 @@ import ProjectsLanguages from './ProjectsLanguages';
 import ExternalLink from '../assets/ExternalLink.svg';
 import GitHub from '../assets/GitHub.svg';
 export default function ProjectsCards(props){
-const {illustration, title, link, github, text, lang, skill} = props.project;
+const {illustration, title, link, github, frontendmentor, text, lang, skill} = props.project;
 return (<>
     <div className="ProjectsCards">
         <div className="ProjectsCards-illustration">
@@ -17,6 +17,7 @@ return (<>
                 {github !== false ? <a href={github} alt="Repo sur GitHub"><img src={GitHub} width="27" height="25" alt="GitHub"/></a> : null}
             </div>
             <p>{text}</p>
+            {frontendmentor !== false ? <p>Défi <a href={frontendmentor} alt="Défi Frontend Mentor">Frontend Mentor</a>.</p> : null}
             <div className="ProjectsCards-languages">
                 {lang.map((item, index) => <ProjectsLanguages key={index} type="lang" value={item}/>)}
             </div>
