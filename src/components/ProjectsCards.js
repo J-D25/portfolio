@@ -6,9 +6,10 @@ export default function ProjectsCards(props){
 const {illustration, title, link, github, frontendmentor, text, lang, skill} = props.project;
 return (<>
     <div className="ProjectsCards">
-        <div className="ProjectsCards-illustration">
+        {illustration &&
+            <div className="ProjectsCards-illustration">
             {illustration}
-        </div>
+        </div>}
         <div className="ProjectsCards-content">
             <div className="ProjectsCards-content-title">
                 <h2>
