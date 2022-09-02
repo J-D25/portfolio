@@ -8,6 +8,7 @@
       ],
       "github": "https://github.com/J-D25/basilique_integration/",
       "text": "Réalisation d'un site Internet sur l'histoire de la Basilique Saint-Ferjeux dans le cadre d'un projet de découverte au cours de ma formation.",
+      "frontendmentor": false,
       "lang": [
         "HTML",
         "CSS",
@@ -26,6 +27,7 @@
       ],
       "github": "https://github.com/J-D25/basilique_integration/",
       "text": "Réalisation d'une interface d'administration pour le site de la Basilique Saint-Ferjeux dans le cadre d'un projet de backoffice au cours de ma formation.",
+      "frontendmentor": false,
       "lang": [
         "PHP",
         "SQL"
@@ -43,6 +45,7 @@
       ],
       "github": false,
       "text": "Conception, réalisation, intégration et maintenance du site de Villy-en-Auxois.",
+      "frontendmentor": false,
       "lang": [
         "HTML",
         "CSS",
@@ -63,7 +66,8 @@
         "Calculator tips"
       ],
       "github": false,
-      "text": "Création d'une calculatrice de pourboire en JavaScript pur.",        
+      "text": "Création d'une calculatrice de pourboire en JavaScript pur.",
+      "frontendmentor": "https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX",
       "lang": [
         "HTML",
         "CSS",
@@ -82,6 +86,7 @@
       ],
       "github": false,
       "text": "Création d'un jeu pierre feuille ciseaux en JavaScript pur en partenariat avec Madame Grangeret Isabelle.",
+      "frontendmentor": "https://www.frontendmentor.io/challenges/rock-paper-scissors-game-pTgwgvgH",
       "lang": [
         "JavaScript"
       ],
