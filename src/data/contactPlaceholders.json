@@ -1,0 +1,75 @@
+[
+    {
+      "lname": "Tyler",
+      "fname": "Bonnie",
+      "mail": "bonnie.tyler@music.com",
+      "message": "Somewhere after midnight in my wildest fantasy..."
+    },
+    {
+      "lname": "Henley",
+      "fname": "Don",
+      "mail": "d.henley@zic.us",
+      "message": "And still those voices are calling from far away..."
+    },
+    {
+      "lname": "Gall",
+      "fname": "Isabelle",
+      "mail": "i.gall@umg.com",
+      "message": "Si on t'organise une vie bien dirigée..."
+    },
+    {
+      "lname": "Steele",
+      "fname": "Jevetta",
+      "mail": "j.steele@ades.fr",
+      "message": "But we both know a change is coming..."
+    },
+    {
+      "lname": "Feldman",
+      "fname": "François",
+      "mail": "ffeldman@phonogram.com",
+      "message": "Dis, à quoi tu penses..."
+    },
+    {
+      "lname": "Bush",
+      "fname": "Kate",
+      "mail": "kate@emi.com",
+      "message": "My one dream, my only master..."
+    },
+    {
+      "lname": "Polnareff",
+      "fname": "Michel",
+      "mail": "marylou@minitel.ft",
+      "message": "Quand l'écran s'allume, je tape sur mon clavier..."
+    },
+    {
+      "lname": "Smith",
+      "fname": "Curt",
+      "mail": "sc@tff.com",
+      "message": "Come on, I'm talking to you, come on..."
+    },
+    {
+      "lname": "De Truchis de Varennes",
+      "fname": "Isabelle",
+      "mail": "i.dtv@mercury.com",
+      "message": "Je passe à l'action quitte à monopoliser l'attention..."
+    },
+    {
+      "lname": "Adjani",
+      "fname": "Isabelle",
+      "mail": "i.adjani@piscine.fr",
+      "message": "J'ai touché le fond de la piscine..."
+    },
+    {
+      "lname": "Franks",
+      "fname": "Steve",
+      "mail": "franks@friendlyindians.com",
+      "message": "In between the lines, there's a lot of obscurity..."
+    },
+    {
+      "lname": "Daho",
+      "fname": "Étienne",
+      "mail": "i.gall@emi.com",
+      "message": "J'ai sur le bout de la langue..."
+    }
+    
+]
