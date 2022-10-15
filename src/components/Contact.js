@@ -22,6 +22,21 @@ export default function Contact() {
   const [rand, setRand] = useState(0);
   const mailpattern = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
 
+  const [successMail, setSuccessMail] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setSuccessMail(false);
+      setName("");
+      setFirstName("");
+      setEmail("");
+      setMessage("");
+    }, 5000);
+    return () => {
+      clearTimeout(timer);
+    }
+  }, [successMail]);
+
   function handleNameChange(e) {
     setName(e.target.value);
     setErrorName(false);
@@ -41,6 +56,7 @@ export default function Contact() {
   const formContact = useRef(null)
   function handleFormSubmit(e) {
     e.preventDefault();
+    /* Vérification des champs */
     let errors = 0;
     if (name === "") {
       setErrorName(true);
@@ -58,21 +74,19 @@ export default function Contact() {
       }
       errors++;
     }
-
     if (message === "") {
       setErrorMessage(true);
       errors++;
     }
+
+    /* Si aucune erreur n'est détectée, on peut lancer la requête */
     if (errors === 0) {
       const data = new FormData(formContact.current);
       fetch(Mail, { method: "POST", body: data })
         .then(response => response.json())
         .then((results) => {
           if (results.responseServer === true && results.responseMailer === true) {
-            setName("");
-            setFirstName("");
-            setEmail("");
-            setMessage("");
+            setSuccessMail(true);
           }
         });
     }
@@ -83,29 +97,30 @@ export default function Contact() {
     <div className="App-content">
       <h1>Contact</h1>
       <p className="App-subtitle">Vous souhaitez discuter ? Remplissez le formulaire ci-dessous.</p>
+      {successMail && <span className="Contact-success">Votre message a bien été envoyé {firstName}, merci.</span>}
       <div className="Contact-means">
         <form ref={formContact} onSubmit={handleFormSubmit} noValidate>
           <div className="Contact-means-formInput">
             <label htmlFor="form-name">Nom</label>
-            <input type="text" id="form-name" name="lname" className={errorName && "error"} value={name} onChange={handleNameChange} placeholder={placeholders[rand].lname} required />
+            <input type="text" id="form-name" name="lname" className={errorName && "error"} value={name} onChange={handleNameChange} placeholder={placeholders[rand].lname} required disabled={successMail} />
             {errorName && <span>Le champ nom est obligatoire.</span>}
           </div>
           <div className="Contact-means-formInput">
             <label htmlFor="form-firstname">Prénom</label>
-            <input type="text" id="form-firstname" name="fname" className={errorFirstName && "error"} value={firstName} onChange={handleFirstNameChange} placeholder={placeholders[rand].fname} required />
+            <input type="text" id="form-firstname" name="fname" className={errorFirstName && "error"} value={firstName} onChange={handleFirstNameChange} placeholder={placeholders[rand].fname} required disabled={successMail} />
             {errorFirstName && <span>Le champ prénom est obligatoire.</span>}
           </div>
           <div className="Contact-means-formInput">
             <label htmlFor="form-email">Email</label>
-            <input type="email" id="form-email" name="mail" className={errorEmail !== false && "error"} value={email} onChange={handleEmailChange} placeholder={placeholders[rand].mail} required />
+            <input type="email" id="form-email" name="mail" className={errorEmail !== false && "error"} value={email} onChange={handleEmailChange} placeholder={placeholders[rand].mail} required disabled={successMail} />
             {errorEmail && (errorEmail === 1 ? <span>{email} n'est pas une adresse email valide.</span> : <span>Le champ email est obligatoire.</span>)}
           </div>
           <div className="Contact-means-formInput">
             <label htmlFor="form-message">Message</label>
-            <textarea type="text" id="form-message" name="message" className={errorMessage && "error"} value={message} onChange={handleMessage} placeholder={placeholders[rand].message} required rows="5" />
+            <textarea type="text" id="form-message" name="message" className={errorMessage && "error"} value={message} onChange={handleMessage} placeholder={placeholders[rand].message} required rows="5" disabled={successMail} />
             {errorMessage && <span>Le champ message est obligatoire.</span>}
           </div>
-          <input type="submit" className="button" value="Valider" />
+          <input type="submit" className="button" value="Valider" disabled={successMail} />
         </form>
         <div className="Contact-means-socials">
           <div className="Contact-means-socials-link">
