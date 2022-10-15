@@ -15,22 +15,67 @@ export default function Contact() {
   const [firstName, setFirstName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [errorName, setErrorName] = useState(false);
+  const [errorFirstName, setErrorFirstName] = useState(false);
+  const [errorEmail, setErrorEmail] = useState(false);
+  const [errorMessage, setErrorMessage] = useState(false);
   const [rand, setRand] = useState(0);
+  const mailpattern = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
 
+  function handleNameChange(e) {
+    setName(e.target.value);
+    setErrorName(false);
+  }
+  function handleFirstNameChange(e) {
+    setFirstName(e.target.value);
+    setErrorFirstName(false);
+  }
+  function handleEmailChange(e) {
+    setEmail(e.target.value);
+    setErrorEmail(false);
+  }
+  function handleMessage(e) {
+    setMessage(e.target.value);
+    setErrorMessage(false);
+  }
   const formContact = useRef(null)
   function handleFormSubmit(e) {
     e.preventDefault();
-    const data = new FormData(formContact.current);
-    fetch(Mail, { method: "POST", body: data })
-      .then(response => response.json())
-      .then((results) => {
-        if (results.responseServer === true && results.responseMailer === true) {
-          setName("");
-          setFirstName("");
-          setEmail("");
-          setMessage("");
-        }
-      });
+    let errors = 0;
+    if (name === "") {
+      setErrorName(true);
+      errors++;
+    }
+    if (firstName === "") {
+      setErrorFirstName(true);
+      errors++;
+    }
+    if (!email.match(mailpattern)) {
+      if (email === "") {
+        setErrorEmail(true);
+      } else {
+        setErrorEmail(1);
+      }
+      errors++;
+    }
+
+    if (message === "") {
+      setErrorMessage(true);
+      errors++;
+    }
+    if (errors === 0) {
+      const data = new FormData(formContact.current);
+      fetch(Mail, { method: "POST", body: data })
+        .then(response => response.json())
+        .then((results) => {
+          if (results.responseServer === true && results.responseMailer === true) {
+            setName("");
+            setFirstName("");
+            setEmail("");
+            setMessage("");
+          }
+        });
+    }
     return false;
   }
 
@@ -42,19 +87,23 @@ export default function Contact() {
         <form ref={formContact} onSubmit={handleFormSubmit} noValidate>
           <div className="Contact-means-formInput">
             <label htmlFor="form-name">Nom</label>
-            <input type="text" id="form-name" name="lname" value={name} onChange={e => setName(e.target.value)} placeholder={placeholders[rand].lname} required />
+            <input type="text" id="form-name" name="lname" className={errorName && "error"} value={name} onChange={handleNameChange} placeholder={placeholders[rand].lname} required />
+            {errorName && <span>Le champ nom est obligatoire.</span>}
           </div>
           <div className="Contact-means-formInput">
             <label htmlFor="form-firstname">Prénom</label>
-            <input type="text" id="form-firstname" name="fname" value={firstName} onChange={e => setFirstName(e.target.value)} placeholder={placeholders[rand].fname} required />
+            <input type="text" id="form-firstname" name="fname" className={errorFirstName && "error"} value={firstName} onChange={handleFirstNameChange} placeholder={placeholders[rand].fname} required />
+            {errorFirstName && <span>Le champ prénom est obligatoire.</span>}
           </div>
           <div className="Contact-means-formInput">
             <label htmlFor="form-email">Email</label>
-            <input type="email" id="form-email" name="mail" value={email} onChange={e => setEmail(e.target.value)} placeholder={placeholders[rand].mail} required />
+            <input type="email" id="form-email" name="mail" className={errorEmail !== false && "error"} value={email} onChange={handleEmailChange} placeholder={placeholders[rand].mail} required />
+            {errorEmail && (errorEmail === 1 ? <span>{email} n'est pas une adresse email valide.</span> : <span>Le champ email est obligatoire.</span>)}
           </div>
           <div className="Contact-means-formInput">
             <label htmlFor="form-message">Message</label>
-            <textarea type="text" id="form-message" name="message" value={message} onChange={e => setMessage(e.target.value)} placeholder={placeholders[rand].message} required rows="5" />
+            <textarea type="text" id="form-message" name="message" className={errorMessage && "error"} value={message} onChange={handleMessage} placeholder={placeholders[rand].message} required rows="5" />
+            {errorMessage && <span>Le champ message est obligatoire.</span>}
           </div>
           <input type="submit" className="button" value="Valider" />
         </form>
