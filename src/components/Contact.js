@@ -25,13 +25,15 @@ export default function Contact() {
   const [successMail, setSuccessMail] = useState(false);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setSuccessMail(false);
-      setName("");
-      setFirstName("");
-      setEmail("");
-      setMessage("");
-    }, 5000);
+    if (successMail) {
+      var timer = setTimeout(() => {
+        setSuccessMail(false);
+        setName("");
+        setFirstName("");
+        setEmail("");
+        setMessage("");
+      }, 5000);
+    }
     return () => {
       clearTimeout(timer);
     }
