@@ -3,8 +3,10 @@ import './App.css';
 import './Contact.css';
 import Mail from "../data/mail.php"
 import illustration from "../assets/contact.svg";
+import placeholders from "../data/contactPlaceholders.json";
 
 export default function Contact() {
+  const Rand = Math.floor(Math.random() * (placeholders.length));
   const [name, setName] = useState("");
   const [firstName, setFirstName] = useState("");
   const [email, setEmail] = useState("");
@@ -34,19 +36,19 @@ export default function Contact() {
         <form ref={formContact} onSubmit={handleFormSubmit}>
           <div className="Contact-means-formInput">
             <label htmlFor="form-name">Nom</label>
-            <input type="text" id="form-name" name="lname" value={name} onChange={e => setName(e.target.value)} placeholder="Tyler" required/>
+            <input type="text" id="form-name" name="lname" value={name} onChange={e => setName(e.target.value)} placeholder={placeholders[Rand].lname} required/>
           </div>
           <div className="Contact-means-formInput">
             <label htmlFor="form-firstname">Prénom</label>
-            <input type="text" id="form-firstname" name="fname" value={firstName} onChange={e => setFirstName(e.target.value)} placeholder="Bonnie" required/>
+            <input type="text" id="form-firstname" name="fname" value={firstName} onChange={e => setFirstName(e.target.value)} placeholder={placeholders[Rand].fname} required/>
           </div>
           <div className="Contact-means-formInput">
             <label htmlFor="form-email">Email</label>
-            <input type="email" id="form-email" name="mail" value={email} onChange={e => setEmail(e.target.value)} placeholder="bonnie.tyler@music.com" required/>
+            <input type="email" id="form-email" name="mail" value={email} onChange={e => setEmail(e.target.value)} placeholder={placeholders[Rand].mail} required/>
           </div>
           <div className="Contact-means-formInput">
             <label htmlFor="form-message">Message</label>
-            <textarea type="text" id="form-message" name="message" value={message} onChange={e => setMessage(e.target.value)} placeholder="Somewhere after midnight in my wildest fantasy" required rows="5"/>
+            <textarea type="text" id="form-message" name="message" value={message} onChange={e => setMessage(e.target.value)} placeholder={placeholders[Rand].message} required rows="5"/>
           </div>
           <input type="submit" className="button" value="Valider"/>
         </form>
