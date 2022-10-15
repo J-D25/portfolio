@@ -50,6 +50,14 @@
     border-bottom-color: black;
 }
 
+.Contact-means-formInput input.error,
+.Contact-means-formInput textarea.error {
+    border-bottom-color: #F44336;
+}
+
+.Contact-means-formInput span{
+    color: #F44336;
+}
 .Contact-means-socials {
     display: flex;
     flex-direction: column;
