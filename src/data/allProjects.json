@@ -3,7 +3,7 @@
       "illustration": null,
       "title": "Basilique Saint-Ferjeux",
       "link": [
-        "https://jessya.promo-159.codeur.online/basilique/",
+        "https://basilique.jd25.fr/",
         "Basilique"
       ],
       "github": "https://github.com/J-D25/basilique_integration/",
@@ -22,7 +22,7 @@
       "illustration": null,
       "title": "Dashboard newsletter",
       "link": [
-        "https://jessya.promo-159.codeur.online/basilique/admin",
+        "https://basilique.jd25.fr/admin",
         "Administration - Basilique Saint-Ferjeux"
       ],
       "github": "https://github.com/J-D25/basilique_integration/",
@@ -62,7 +62,7 @@
       "illustration": null,
       "title": "Calculatrice de pourboires",
       "link": [
-        "https://jessya.promo-159.codeur.online/tips/",
+        "https://tips.jd25.fr/",
         "Calculator tips"
       ],
       "github": false,
@@ -81,10 +81,10 @@
       "illustration": null,
       "title": "Rock, paper, scissors",
       "link": [
-        "https://jessya.promo-159.codeur.online/rock/",
+        "https://rock.jd25.fr/",
         "Rock"
       ],
-      "github": false,
+      "github": "https://github.com/J-D25/marathon_js3",
       "text": "Création d'un jeu pierre feuille ciseaux en JavaScript pur en partenariat avec Madame Grangeret Isabelle.",
       "frontendmentor": "https://www.frontendmentor.io/challenges/rock-paper-scissors-game-pTgwgvgH",
       "lang": [
@@ -98,7 +98,7 @@
       "illustration": null,
       "title": "To Do List",
       "link": [
-        "https://jessya.promo-159.codeur.online/todolist/",
+        "https://todolist.jd25.fr/",
         "To Do List"
       ],
       "github": false,
