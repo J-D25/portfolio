@@ -1,6 +1,6 @@
-# Mon portefolio
+# Mon portfolio
 
-Bienvenue sur le repo de mon portefolio !
+Bienvenue sur le repository de mon portfolio !
 Ce projet a été amorcé avec [Create React App](https://github.com/facebook/create-react-app).
 
 ## Maquette
@@ -9,4 +9,4 @@ La maquette de conception se trouve [sur Figma](https://www.figma.com/file/eO1xN
 
 ## Site intégré
 
-Le site est consultable sur [https://portfoliojd.promo-159.codeur.online/](https://portfoliojd.promo-159.codeur.online/).
+Le site est consultable sur [https://jd25.fr/](https://jd25.fr/).
