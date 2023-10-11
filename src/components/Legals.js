@@ -8,7 +8,7 @@ export default function Legals() {
       <p>En vertu de l'article 6 de la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique, il est précisé aux utilisateurs du site internet {process.env.REACT_APP_URL} l'identité des différents intervenants dans le cadre de sa réalisation et de son suivi :</p>
       
       <p>Responsable publication : M. AUZANNEAU Jessy-Daniel</p>
-      <p>Hébergeur : OVH SAS - 2 rue Kellermann - BP 80157 - 59053 Roubaix Cedex 1 - Téléphone : 1007</p>
+      <p>Hébergeur : {process.env.REACT_APP_HOSTING}</p>
 
       <h2>2 - Propriété intellectuelle et contrefaçons</h2>
       <p>Jessy-Daniel est propriétaire des droits de propriété intellectuelle et détient les droits d'usage sur tous les éléments accessibles sur le site internet, notamment les textes, images, graphismes, logos, vidéos, architecture, icônes et sons, à l'exception des images illustratives dont les auteurs sont mentionnés dans la section Attributions.</p>
