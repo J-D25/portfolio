@@ -125,26 +125,26 @@ export default function Contact() {
           <input type="submit" className="button" value="Valider" disabled={successMail} />
         </form>
         <div className="Contact-means-socials">
-          <div className="Contact-means-socials-link">
+          {process.env.REACT_APP_SOCIALS_GITHUB && <div className="Contact-means-socials-link">
             <div className="Contact-means-socials-link-circle">
               <i className="fa-brands fa-github"></i>
             </div>
-            <a href="https://github.com/J-D25/">GitHub</a>
-          </div>
+            <a href={process.env.REACT_APP_SOCIALS_GITHUB}>GitHub</a>
+          </div>}
 
-          <div className="Contact-means-socials-link">
+          {process.env.REACT_APP_SOCIALS_LINKEDIN && <div className="Contact-means-socials-link">
             <div className="Contact-means-socials-link-circle">
               <i className="fa-brands fa-linkedin-in"></i>
             </div>
-            <a href="https://www.linkedin.com/in/jessy-daniel">LinkedIn</a>
-          </div>
+            <a href={process.env.REACT_APP_SOCIALS_LINKEDIN}>LinkedIn</a>
+          </div>}
 
-          <div className="Contact-means-socials-link">
+          {process.env.REACT_APP_SOCIALS_INSTAGRAM && <div className="Contact-means-socials-link">
             <div className="Contact-means-socials-link-circle">
               <i className="fa-brands fa-instagram"></i>
             </div>
-            <a href="https://www.instagram.com/jd.dev25/">Instagram</a>
-          </div>
+            <a href={process.env.REACT_APP_SOCIALS_INSTAGRAM}>Instagram</a>
+          </div>}
         </div>
       </div>
     </div>
