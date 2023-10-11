@@ -4,15 +4,15 @@ import illustration from "../assets/about.svg";
 import MySQL from "../assets/MySQL.svg";
 import VBA from "../assets/VBA.svg";
 import VSCode from "../assets/VSCode.svg";
-import CV from "../data/CV J-D25.pdf"
+import CV from "../data/CV_J-D25.pdf"
 import {dayFromDate} from "../day.js";
 
 export default function About() {
   return (<>
     <div className="App-content">
       <h1>À propos</h1>
-      <p className="About-paragraph">Passionné d'informatique depuis toujours, je mets mes compétences au service de la commune de Villy-en-Auxois depuis {dayFromDate("12 May 2012", "years")} ans en assurant le développement et la maintenance de leur site Internet.</p>
-      <p className="About-paragraph">Actuellement je suis en formation développeur web et web mobile chez Onlineformapro à Besançon.</p>
+      <p className="About-paragraph">Passionné par l'informatique depuis toujours, je mets mes compétences au service de la commune de Villy-en-Auxois depuis {dayFromDate("12 May 2012", "years")} ans en assurant le développement et la maintenance de leur site Internet.</p>
+      <p className="About-paragraph">En novembre 2022, j'ai obtenu le titre professionnel développeur web et web mobile après une formation chez Onlineformapro à Besançon.</p>
       <p><a href={CV} className="button">Télécharger mon CV</a></p>
       <div className="About-icons">
         <i className="fa-brands fa-html5"></i>
