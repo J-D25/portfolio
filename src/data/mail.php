@@ -17,7 +17,7 @@ header("Access-Control-Allow-Origin: *");
             $message = '<p>Message envoyé depuis la page Contact du portfolio de J-D25</p>
             <p><b>Nom et prénom : </b>' . $lastName . ' ' . $firstName . '</p>
             <p><b>Email : </b>' . $mailAddress . '</p>
-            <b>Message : </b>' . $messageContent . '</p>';
+            <p><b>Message : </b>' . $messageContent . '</p>';
             $receiver = 'Jessy-Daniel <j.auzanneau@codeur.online>';
             $response = mail($receiver, $object, $message, $header);
             if ($response===true){
