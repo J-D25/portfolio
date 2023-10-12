@@ -60,6 +60,25 @@
     },
     {
       "illustration": null,
+      "title": "Horloge",
+      "link": [
+        "https://clock.jd25.fr/",
+        "Clock App"
+      ],
+      "github": false,
+      "text": "Création d'une horloge en JavaScript pur avec appels API pour afficher le fuseau horaire, une citation et la ville de l'utilisateur.",
+      "frontendmentor": "https://www.frontendmentor.io/challenges/clock-app-LMFaxFwrM",
+      "lang": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "skill": [
+        "Front"
+      ]
+    },
+    {
+      "illustration": null,
       "title": "Calculatrice de pourboires",
       "link": [
         "https://tips.jd25.fr/",
