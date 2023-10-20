@@ -5,6 +5,8 @@ use Dotenv\Dotenv;
 $dotenv = Dotenv::createImmutable(__DIR__);
 $dotenv->safeLoad();
 
+$sender_name = $_ENV["REACT_APP_SENDER_NAME"];
+$sender_mail = $_ENV["REACT_APP_SENDER_MAIL"];
 $receiver_name = $_ENV["REACT_APP_CONTACT_NAME"];
 $receiver_mail = $_ENV["REACT_APP_CONTACT_MAIL"];
 
@@ -17,7 +19,7 @@ $receiver_mail = $_ENV["REACT_APP_CONTACT_MAIL"];
             $message_content = htmlspecialchars($_POST['message']);
             
             //Contenu mail
-            $sender=$last_name . ' ' . $first_name . ' <' . $mail_address.'>';
+            $sender = $sender_name . ' <' . $sender_mail . '>';
             $header  = 'MIME-Version: 1.0' . "\r\n";
             $header .= 'Content-type: text/html; charset=utf-8' . "\r\n";
             $header .= 'From: '.$sender . "\r\n";
