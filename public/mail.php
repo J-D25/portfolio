@@ -1,5 +1,13 @@
 <?php
 header("Access-Control-Allow-Origin: *");
+require __DIR__ . '/vendor/autoload.php';
+use Dotenv\Dotenv;
+$dotenv = Dotenv::createImmutable(__DIR__);
+$dotenv->safeLoad();
+
+$receiver_name = $_ENV["REACT_APP_CONTACT_NAME"];
+$receiver_mail = $_ENV["REACT_APP_CONTACT_MAIL"];
+
     if (isset($_POST['lname']) && isset($_POST['fname']) && isset($_POST['mail']) && isset($_POST['message'])) {
         if(!empty($_POST['lname']) && !empty($_POST['fname']) && !empty($_POST['mail']) && filter_var($_POST['mail'], FILTER_VALIDATE_EMAIL) && !empty($_POST['message'])) {
             //Variables
@@ -18,7 +26,7 @@ header("Access-Control-Allow-Origin: *");
             <p><b>Nom et prénom : </b>' . $lastName . ' ' . $firstName . '</p>
             <p><b>Email : </b>' . $mailAddress . '</p>
             <p><b>Message : </b>' . $messageContent . '</p>';
-            $receiver = 'Jessy-Daniel <j.auzanneau@codeur.online>';
+            $receiver = $receiver_name . ' <' . $receiver_mail . '>';
             $response = mail($receiver, $object, $message, $header);
             if ($response===true){
                 echo json_encode(["responseServer"=>true, "responseMailer"=>true]);
