@@ -103,12 +103,12 @@ export default function Contact() {
         <form ref={formContact} onSubmit={handleFormSubmit} noValidate>
           <div className="Contact-means-formInput">
             <label htmlFor="form-name">Nom</label>
-            <input type="text" id="form-name" name="lname" className={errorName ? "error" : undefined} value={name} onChange={handleNameChange} placeholder={placeholders[rand].lname} required disabled={successMail} />
+            <input type="text" id="form-name" name="lastname" className={errorName ? "error" : undefined} value={name} onChange={handleNameChange} placeholder={placeholders[rand].lname} required disabled={successMail} />
             {errorName && <span>Le champ nom est obligatoire.</span>}
           </div>
           <div className="Contact-means-formInput">
             <label htmlFor="form-firstname">Prénom</label>
-            <input type="text" id="form-firstname" name="fname" className={errorFirstName ? "error" : undefined} value={firstName} onChange={handleFirstNameChange} placeholder={placeholders[rand].fname} required disabled={successMail} />
+            <input type="text" id="form-firstname" name="firstname" className={errorFirstName ? "error" : undefined} value={firstName} onChange={handleFirstNameChange} placeholder={placeholders[rand].fname} required disabled={successMail} />
             {errorFirstName && <span>Le champ prénom est obligatoire.</span>}
           </div>
           <div className="Contact-means-formInput">
