@@ -104,22 +104,22 @@ export default function Contact() {
         <form ref={formContact} onSubmit={handleFormSubmit} noValidate>
           <div className="Contact-means-formInput">
             <label htmlFor="form-name">Nom</label>
-            <input type="text" id="form-name" name="lname" className={errorName && "error"} value={name} onChange={handleNameChange} placeholder={placeholders[rand].lname} required disabled={successMail} />
+            <input type="text" id="form-name" name="lname" className={errorName ? "error" : undefined} value={name} onChange={handleNameChange} placeholder={placeholders[rand].lname} required disabled={successMail} />
             {errorName && <span>Le champ nom est obligatoire.</span>}
           </div>
           <div className="Contact-means-formInput">
             <label htmlFor="form-firstname">Prénom</label>
-            <input type="text" id="form-firstname" name="fname" className={errorFirstName && "error"} value={firstName} onChange={handleFirstNameChange} placeholder={placeholders[rand].fname} required disabled={successMail} />
+            <input type="text" id="form-firstname" name="fname" className={errorFirstName ? "error" : undefined} value={firstName} onChange={handleFirstNameChange} placeholder={placeholders[rand].fname} required disabled={successMail} />
             {errorFirstName && <span>Le champ prénom est obligatoire.</span>}
           </div>
           <div className="Contact-means-formInput">
             <label htmlFor="form-email">Email</label>
-            <input type="email" id="form-email" name="mail" className={errorEmail !== false && "error"} value={email} onChange={handleEmailChange} placeholder={placeholders[rand].mail} required disabled={successMail} />
+            <input type="email" id="form-email" name="mail" className={errorEmail !== false ? "error" : undefined} value={email} onChange={handleEmailChange} placeholder={placeholders[rand].mail} required disabled={successMail} />
             {errorEmail && (errorEmail === 1 ? <span>{email} n'est pas une adresse email valide.</span> : <span>Le champ email est obligatoire.</span>)}
           </div>
           <div className="Contact-means-formInput">
             <label htmlFor="form-message">Message</label>
-            <textarea type="text" id="form-message" name="message" className={errorMessage && "error"} value={message} onChange={handleMessage} placeholder={placeholders[rand].message} required rows="5" disabled={successMail} />
+            <textarea type="text" id="form-message" name="message" className={errorMessage ? "error" : undefined} value={message} onChange={handleMessage} placeholder={placeholders[rand].message} required rows="5" disabled={successMail} />
             {errorMessage && <span>Le champ message est obligatoire.</span>}
           </div>
           <input type="submit" className="button" value="Valider" disabled={successMail} />
