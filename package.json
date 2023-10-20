@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "version": "1.0",
+  "version": "1.1",
   "homepage": ".",
   "private": true,
   "dependencies": {
@@ -16,7 +16,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && cp .env build/ && cp -r vendor build/",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
