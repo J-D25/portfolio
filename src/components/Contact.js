@@ -1,7 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import './App.css';
 import './Contact.css';
-import Mail from "../data/mail.php"
 import illustration from "../assets/contact.svg";
 import placeholders from "../data/contactPlaceholders.json";
 
@@ -84,7 +83,7 @@ export default function Contact() {
     /* Si aucune erreur n'est détectée, on peut lancer la requête */
     if (errors === 0) {
       const data = new FormData(formContact.current);
-      fetch(Mail, { method: "POST", body: data })
+      fetch("/mail.php", { method: "POST", body: data })
         .then(response => response.json())
         .then((results) => {
           if (results.responseServer === true && results.responseMailer === true) {
