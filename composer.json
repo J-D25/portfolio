@@ -3,5 +3,8 @@
         "platform": {
             "php": "8.0.28"
         }
+    },
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
     }
 }
