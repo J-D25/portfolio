@@ -8,12 +8,12 @@ export default function ProjectsCards(props) {
         <div className="ProjectsCards">
             {illustration && illustration.url &&
                 <div className="ProjectsCards-illustration">
-                    <img src={illustration.url} width={illustration.width} height={illustration.height} alt={illustration.alt ? illustration.alt : "Capture du site " + title + " en format desktop."} />
+                    <a href={link} className="ProjectsCards-content-title" title={title + ", ouvrir dans un nouvel onglet"} target="_blank" rel="noreferrer"><img src={illustration.url} width={illustration.width} height={illustration.height} alt={illustration.alt ? illustration.alt : "Capture du site " + title + " en format desktop."} /></a>
                 </div>}
             <div className="ProjectsCards-content">
                 <div className="ProjectsCards-content-title">
                     <h2>
-                        <a href={link[0]} alt={link[1]} className="ProjectsCards-content-title">{title} <img src={ExternalLink} width="25" height="25" alt="Lien externe" /></a>
+                        <a href={link} className="ProjectsCards-content-title" title={title + ", ouvrir dans un nouvel onglet"} target="_blank" rel="noreferrer">{title} <img src={ExternalLink} width="25" height="25" alt="Lien externe" /></a>
                     </h2>
                     {github !== false ? <a href={github} alt="Repo sur GitHub"><img src={GitHub} width="27" height="25" alt="GitHub" /></a> : null}
                 </div>
@@ -26,6 +26,6 @@ export default function ProjectsCards(props) {
                     {skill.map((item, index) => <ProjectsLanguages key={index} type="skill" value={item} />)}
                 </div>
             </div>
-        </div>
+        </div >
     </>);
 }
