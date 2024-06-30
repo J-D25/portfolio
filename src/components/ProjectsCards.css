@@ -10,6 +10,7 @@
 .ProjectsCards-illustration {
     background-color: #F8F8F8;
     border-radius: 15px 15px 0 0;
+    overflow: hidden;
 }
 
 .ProjectsCards-content {
