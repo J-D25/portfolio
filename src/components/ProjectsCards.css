@@ -23,7 +23,7 @@
     padding: 2.1875rem 3.4375rem;
     display: flex;
     flex-direction: column;
-    gap: 35px;
+    gap: 25px;
 }
 
 .ProjectsCards-content-title {
@@ -62,6 +62,16 @@
 @media all and (max-width:765px) {
     .ProjectsCards-content {
         padding: 1.1875rem 1.4375rem;
+
+    }
+
+    .ProjectsCards-content,
+    .ProjectsCards-languages {
+        gap: 18px;
+    }
+
+    .ProjectsCards-content h2 {
+        font-size: 1.45rem;
     }
 
     .ProjectsCards-content p {
