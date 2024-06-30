@@ -1,135 +1,142 @@
 [
-    {
-      "illustration": null,
-      "title": "Basilique Saint-Ferjeux",
-      "link": [
-        "https://basilique.jd25.fr/",
-        "Basilique"
-      ],
-      "github": "https://github.com/J-D25/basilique_integration/",
-      "text": "Réalisation d'un site Internet sur l'histoire de la Basilique Saint-Ferjeux dans le cadre d'un projet de découverte au cours de ma formation.",
-      "frontendmentor": false,
-      "lang": [
-        "HTML",
-        "CSS",
-        "JavaScript"
-      ],
-      "skill": [
-        "Front"
-      ]
+  {
+    "illustration": {
+      "url": "https://jd25.fr/assets/basilique-saint-ferjeux.png",
+      "width": 600,
+      "height": 332
     },
-    {
-      "illustration": null,
-      "title": "Dashboard newsletter",
-      "link": [
-        "https://basilique.jd25.fr/admin",
-        "Administration - Basilique Saint-Ferjeux"
-      ],
-      "github": "https://github.com/J-D25/basilique_integration/",
-      "text": "Réalisation d'une interface d'administration pour le site de la Basilique Saint-Ferjeux dans le cadre d'un projet de backoffice au cours de ma formation.",
-      "frontendmentor": false,
-      "lang": [
-        "PHP",
-        "SQL"
-      ],
-      "skill": [
-        "Back"
-      ]
+    "title": "Basilique Saint-Ferjeux",
+    "link": "https://basilique.jd25.fr/",
+    "github": "https://github.com/J-D25/basilique_integration/",
+    "text": "Réalisation d'un site Internet sur l'histoire de la Basilique Saint-Ferjeux dans le cadre d'un projet de découverte au cours de ma formation.",
+    "frontendmentor": false,
+    "lang": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "skill": [
+      "Front"
+    ]
+  },
+  {
+    "illustration": {
+      "url": "https://jd25.fr/assets/dashboard-newsletter.png",
+      "width": 600,
+      "height": 332
     },
-    {
-      "illustration": null,
-      "title": "Villy-en-Auxois",
-      "link": [
-        "http://villyenauxois.free.fr/",
-        "Villy-en-Auxois"
-      ],
-      "github": false,
-      "text": "Conception, réalisation, intégration et maintenance du site de Villy-en-Auxois.",
-      "frontendmentor": false,
-      "lang": [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "PHP",
-        "SQL"
-      ],
-      "skill": [
-        "Front",
-        "Back"
-      ]
+    "title": "Dashboard newsletter",
+    "link": "https://basilique.jd25.fr/admin",
+    "github": "https://github.com/J-D25/basilique_integration/",
+    "text": "Réalisation d'une interface d'administration pour le site de la Basilique Saint-Ferjeux dans le cadre d'un projet de backoffice au cours de ma formation.",
+    "frontendmentor": false,
+    "lang": [
+      "PHP",
+      "SQL"
+    ],
+    "skill": [
+      "Back"
+    ]
+  },
+  {
+    "illustration": {
+      "url": "https://jd25.fr/assets/villy-en-auxois.png",
+      "width": 600,
+      "height": 332
     },
-    {
-      "illustration": null,
-      "title": "Horloge",
-      "link": [
-        "https://clock.jd25.fr/",
-        "Clock App"
-      ],
-      "github": false,
-      "text": "Création d'une horloge en JavaScript pur avec appels API pour afficher le fuseau horaire, une citation et la ville de l'utilisateur.",
-      "frontendmentor": "https://www.frontendmentor.io/challenges/clock-app-LMFaxFwrM",
-      "lang": [
-        "HTML",
-        "CSS",
-        "JavaScript"
-      ],
-      "skill": [
-        "Front"
-      ]
+    "title": "Villy-en-Auxois",
+    "link": "http://villyenauxois.free.fr/",
+    "github": false,
+    "text": "Conception, réalisation, intégration et maintenance du site de Villy-en-Auxois.",
+    "frontendmentor": false,
+    "lang": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "PHP",
+      "SQL"
+    ],
+    "skill": [
+      "Front",
+      "Back"
+    ]
+  },
+  {
+    "illustration": {
+      "url": "https://jd25.fr/assets/horloge.png",
+      "width": 600,
+      "height": 332
     },
-    {
-      "illustration": null,
-      "title": "Calculatrice de pourboires",
-      "link": [
-        "https://tips.jd25.fr/",
-        "Calculator tips"
-      ],
-      "github": false,
-      "text": "Création d'une calculatrice de pourboire en JavaScript pur.",
-      "frontendmentor": "https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX",
-      "lang": [
-        "HTML",
-        "CSS",
-        "JavaScript"
-      ],
-      "skill": [
-        "Front"
-      ]
+    "title": "Horloge",
+    "link": "https://clock.jd25.fr/",
+    "github": "https://github.com/J-D25/clock-app",
+    "text": "Création d'une horloge en JavaScript pur avec appels API pour afficher le fuseau horaire, une citation et la ville de l'utilisateur.",
+    "frontendmentor": "https://www.frontendmentor.io/challenges/clock-app-LMFaxFwrM",
+    "lang": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "skill": [
+      "Front"
+    ]
+  },
+  {
+    "illustration": {
+      "url": "https://jd25.fr/assets/calculatrice-de-pourboires.png",
+      "width": 600,
+      "height": 332
     },
-    {
-      "illustration": null,
-      "title": "Rock, paper, scissors",
-      "link": [
-        "https://rock.jd25.fr/",
-        "Rock"
-      ],
-      "github": "https://github.com/J-D25/marathon_js3",
-      "text": "Création d'un jeu pierre feuille ciseaux en JavaScript pur en partenariat avec Madame Grangeret Isabelle.",
-      "frontendmentor": "https://www.frontendmentor.io/challenges/rock-paper-scissors-game-pTgwgvgH",
-      "lang": [
-        "JavaScript"
-      ],
-      "skill": [
-        "Front"
-      ]
+    "title": "Calculatrice de pourboires",
+    "link": "https://tips.jd25.fr/",
+    "github": false,
+    "text": "Création d'une calculatrice de pourboire en JavaScript pur.",
+    "frontendmentor": "https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX",
+    "lang": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "skill": [
+      "Front"
+    ]
+  },
+  {
+    "illustration": {
+      "url": "https://jd25.fr/assets/rock-paper-scissors.png",
+      "width": 600,
+      "height": 332
     },
-    {
-      "illustration": null,
-      "title": "To Do List",
-      "link": [
-        "https://todolist.jd25.fr/",
-        "To Do List"
-      ],
-      "github": false,
-      "text": "Réalisation des scripts afin de rendre fonctionnelle une To Do List déjà intégrée.",
-      "frontendmentor": false,
-      "lang": [
-        "PHP",
-        "JavaScript",
-        "MySQL"
-      ],
-      "skill": [
-        "Back"
-      ]
-    }
+    "title": "Rock, paper, scissors",
+    "link": "https://rock.jd25.fr/",
+    "github": "https://github.com/J-D25/rock-paper-scissors",
+    "text": "Création d'un jeu pierre feuille ciseaux en JavaScript pur.",
+    "frontendmentor": "https://www.frontendmentor.io/challenges/rock-paper-scissors-game-pTgwgvgH",
+    "lang": [
+      "JavaScript"
+    ],
+    "skill": [
+      "Front"
+    ]
+  },
+  {
+    "illustration": {
+      "url": "https://jd25.fr/assets/to-do-list.png",
+      "width": 600,
+      "height": 332
+    },
+    "title": "To Do List",
+    "link": "https://todolist.jd25.fr/",
+    "github": "https://github.com/J-D25/todolist",
+    "text": "Réalisation des scripts afin de rendre fonctionnelle une To Do List déjà intégrée.",
+    "frontendmentor": false,
+    "lang": [
+      "PHP",
+      "JavaScript",
+      "MySQL"
+    ],
+    "skill": [
+      "Back"
+    ]
+  }
 ]
