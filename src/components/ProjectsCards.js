@@ -8,7 +8,7 @@ export default function ProjectsCards(props) {
         <div className="ProjectsCards">
             {illustration && illustration.url &&
                 <div className="ProjectsCards-illustration">
-                    <img src={illustration.url} width={illustration.width} height={illustration.height} alt={illustration.alt ? illustration.alt : "Capture du site " + title + "en format desktop."} />
+                    <img src={illustration.url} width={illustration.width} height={illustration.height} alt={illustration.alt ? illustration.alt : "Capture du site " + title + " en format desktop."} />
                 </div>}
             <div className="ProjectsCards-content">
                 <div className="ProjectsCards-content-title">
