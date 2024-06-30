@@ -1,11 +1,14 @@
 import './Footer.css';
 import {Link} from "react-router-dom";
+
 export default function Footer(){
 const items = [{name:"Mentions légales", link:"/legals"}, {name:"Plan du site", link:"/sitemap"}];
+const today = new Date();
+const year = today.getFullYear();
 
 return (<>
 <footer id="footer">
-    <p className="Footer-copyright">2023, J-D25</p>
+    <p className="Footer-copyright">{year}, J-D25</p>
     <div className="Footer-socials">
         {process.env.REACT_APP_SOCIALS_GITHUB && <a href={process.env.REACT_APP_SOCIALS_GITHUB} className="Contact-means-socials-link-circle" title="GitHub"><i className="fa-brands fa-github"></i></a>}
         {process.env.REACT_APP_SOCIALS_LINKEDIN && <a href={process.env.REACT_APP_SOCIALS_LINKEDIN} className="Contact-means-socials-link-circle" title="LinkedIn"><i className="fa-brands fa-linkedin-in"></i></a>}
