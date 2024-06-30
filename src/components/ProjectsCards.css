@@ -11,6 +11,12 @@
     background-color: #F8F8F8;
     border-radius: 15px 15px 0 0;
     overflow: hidden;
+    display: flex;
+}
+
+.ProjectsCards-illustration img {
+    width: 100%;
+    height: auto;
 }
 
 .ProjectsCards-content {
@@ -57,12 +63,14 @@
     .ProjectsCards-content {
         padding: 1.1875rem 1.4375rem;
     }
+
     .ProjectsCards-content p {
         margin: 0;
     }
 }
+
 @media all and (max-width:992px) {
-.Project-Cards {
-    justify-content: center;
-}
+    .Project-Cards {
+        justify-content: center;
+    }
 }
