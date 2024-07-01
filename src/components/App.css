@@ -37,10 +37,9 @@
 }
 
 .Project-Cards {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
     gap: 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(28rem, 1fr));
 }
 
 @media all and (max-width:765px) {
@@ -63,5 +62,13 @@
 @media all and (min-width:765px) and (max-width:992px) {
     .App-hello {
         margin: 1.5rem 0;
+    }
+}
+
+@media all and (max-width:1048px) {
+    .Project-Cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
